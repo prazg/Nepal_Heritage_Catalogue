@@ -2,6 +2,7 @@
 
 A static, searchable catalogue of Nepalese objects, manuscripts and archives held outside Nepal, built from institutions' open data, with hand-curated archival collections and a repatriation tracker.
 
+Link: https://prazg.github.io/Nepal_Heritage_Catalogue/
 
 ## Refresh the data
 
