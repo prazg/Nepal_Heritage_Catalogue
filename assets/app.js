@@ -58,12 +58,45 @@
     return list;
   }
 
+  // ---------- images ----------
+  // Order of attempts: copy hosted in this repository -> the institution's own URL -> labelled placeholder.
+  // Chicago's image server blocks embedding on other websites (403 + Cross-Origin-Resource-Policy: same-origin),
+  // so its remote URL is not attempted; its API's tiny colour preview (lqip) is shown instead.
+  const BLOCKED_REMOTE = new Set(["Art Institute of Chicago"]);
+  function imageSources(o, preferLarge) {
+    const remote = o.image && !BLOCKED_REMOTE.has(o.source) ? o.image : "";
+    const list = preferLarge ? [remote, o.thumb] : [o.thumb, remote];
+    return list.filter(Boolean);
+  }
+  function placeholder(o) {
+    if (o.lqip) {
+      return `<span class="lqip" style="background-image:url('${esc(o.lqip)}')" aria-hidden="true"></span>
+        <span class="noimg over">Colour preview only. The museum&#39;s image server currently refuses display on other websites — view at source</span>`;
+    }
+    if (o.image || o.thumb) return `<span class="noimg">Image did not load — view at source</span>`;
+    return `<span class="noimg">No open image in this record — view at source</span>`;
+  }
+  window.__nextImg = function (img) {
+    const rest = JSON.parse(img.dataset.rest || "[]");
+    if (rest.length) {
+      img.dataset.rest = JSON.stringify(rest.slice(1));
+      img.src = rest[0];
+    } else {
+      const o = D.objects[+img.dataset.i];
+      img.insertAdjacentHTML("afterend", placeholder(o));
+      img.remove();
+    }
+  };
+  function imgTag(o, preferLarge, cls) {
+    const srcs = imageSources(o, preferLarge);
+    if (!srcs.length) return placeholder(o);
+    return `<img ${cls ? `class="${cls}"` : ""} src="${esc(srcs[0])}" data-rest='${esc(JSON.stringify(srcs.slice(1)))}' data-i="${o._i}"
+      alt="${esc(o.alt || o.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="__nextImg(this)">`;
+  }
+
   function card(o) {
-    const img = o.image
-      ? `<img src="${esc(o.image)}" alt="" loading="lazy" decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'noimg',textContent:'Image did not load — view at source'}))">`
-      : `<span class="noimg">No open image in this record — view at source</span>`;
     return `<li class="card"><button type="button" data-i="${o._i}" aria-label="${esc(o.title)}, details">
-      <div class="thumb">${img}</div>
+      <div class="thumb">${imgTag(o, false)}</div>
       <h3>${esc(o.title)}</h3>
       <p class="meta">${esc(o.date || "Undated")}<br>${esc(o.source)}</p>
       ${o.claim ? '<span class="flag claim">Repatriation claim</span>' : ""}
@@ -89,7 +122,7 @@
   function openDetail(o) {
     const row = (k, v) => (v ? `<dt>${k}</dt><dd>${esc(v)}</dd>` : "");
     $("#d-body").innerHTML = `<div class="d-grid">
-      <div>${o.image ? `<img src="${esc(o.image)}" alt="${esc(o.title)}">` : `<div class="thumb"><span class="noimg">No openly licensed image in the record</span></div>`}</div>
+      <div><div class="dimg">${imageSources(o, true).length ? imgTag(o, true) : `<div class="thumb">${placeholder(o)}</div>`}</div>${o.thumb ? `<p class="meta small">Image copy hosted with this catalogue under its open licence (${esc(o.dataLicence)}).</p>` : ""}</div>
       <div>
         <h2 id="d-title">${esc(o.title)}</h2>
         <p class="meta">${esc(o.source)}, ${esc(o.country)}</p>
@@ -156,6 +189,8 @@
     <p>The Met search index returned ${D.metMissing.length} object IDs whose records now return “not found”: ${D.metMissing.map(esc).join(", ")}. The reason is not known; they may have been deaccessioned or merged.</p>
     <p>Provenance text is reproduced as published by each museum. An absence of provenance, or a clean-looking provenance, is not evidence that an object left Nepal lawfully. Equally, appearing in this catalogue says nothing about an object's legal status.</p>
     <p>The British Museum, Musée Guimet, LACMA, the Museum of Fine Arts Boston, and the Asian Art Museum San Francisco are listed under Institutions but not harvested.</p>
+    <h2>Images</h2>
+    <p>Openly licensed images from the Met, Cleveland, Wellcome and the Smithsonian are served as small copies stored with this catalogue, so they load even if the original server changes its rules. V&amp;A and Harvard images are shown from the institutions' own servers and may not always load. The Art Institute of Chicago's image server currently blocks display on other websites (it returns a Cloudflare challenge and a same-origin resource policy), so Chicago records show only a blurred colour preview supplied by its API; the full image is on the museum's own page.</p>
     <h2>Downloads</h2>
     <p><a href="data/objects.csv">objects.csv</a> (flat table), <a href="data/objects.json">objects.json</a>, <a href="data/curated.json">curated.json</a> (archives, institutions, repatriation). Built ${esc(D.built)}.</p>`;
 

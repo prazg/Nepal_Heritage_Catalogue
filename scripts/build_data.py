@@ -45,6 +45,12 @@ for o in objects:
     if o["id"] in CLAIM_LINKS:
         o["claim"] = CLAIM_LINKS[o["id"]]
 
+thumbs_path = ROOT / "data" / "thumbs.json"
+thumbs = set(json.load(open(thumbs_path))) if thumbs_path.exists() else set()
+for o in objects:
+    if o["id"] in thumbs:
+        o["thumb"] = f"images/thumbs/{o['id']}.jpg"
+
 payload = {
     "built": datetime.date.today().isoformat(),
     "harvested": log.get("harvested"),

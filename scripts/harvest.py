@@ -67,7 +67,7 @@ body = json.dumps({"query": {"bool": {"should": [{"match_phrase": {"place_of_ori
                     ["Nepal", "Kathmandu", "Patan", "Bhaktapur", "Lalitpur"]]}}, "limit": 100,
                    "fields": ["id", "title", "date_display", "medium_display", "place_of_origin",
                               "artwork_type_title", "credit_line", "main_reference_number",
-                              "provenance_text", "image_id", "is_public_domain"]}).encode()
+                              "provenance_text", "image_id", "is_public_domain", "thumbnail"]}).encode()
 aic = get("https://api.artic.edu/api/v1/artworks/search", data=body)
 json.dump(aic, open(RAW / "aic.json", "w"), indent=1)
 for a in (aic or {}).get("data", []):
@@ -80,7 +80,8 @@ for a in (aic or {}).get("data", []):
         "image": f"https://www.artic.edu/iiif/2/{a['image_id']}/full/843,/0/default.jpg" if a.get("image_id") and a.get("is_public_domain") else "",
         "openImage": bool(a.get("is_public_domain")),
         "url": f"https://www.artic.edu/artworks/{a['id']}",
-        "dataLicence": "CC0 (description field CC-BY)", "matchBasis": "place_of_origin: " + (a.get("place_of_origin") or "")})
+        "dataLicence": "CC0 (description field CC-BY)", "matchBasis": "place_of_origin: " + (a.get("place_of_origin") or ""),
+        "lqip": ((a.get("thumbnail") or {}).get("lqip") or ""), "alt": ((a.get("thumbnail") or {}).get("alt_text") or "")})
 
 # ---------------------------------------------------------------- Metropolitan Museum of Art (Open Access, CC0 for public-domain works)
 print("Met …")

@@ -1,6 +1,14 @@
-# Nepalese heritage Catalogue (In a Foreign collection)
+# Nepalese heritage in collections abroad
 
 A static, searchable catalogue of Nepalese objects, manuscripts and archives held outside Nepal, built from institutions' open data, with hand-curated archival collections and a repatriation tracker.
+
+## Publish on GitHub Pages
+
+1. Create a new repository and upload everything in this folder, keeping the structure (`index.html`, `assets/`, `data/`, `scripts/`).
+2. In the repository go to **Settings → Pages**, set the source to **Deploy from a branch**, choose `main` and `/ (root)`, and save.
+3. The site appears at `https://<your-username>.github.io/<repository-name>/` after a minute or two.
+
+The page also works when opened directly from disk, because the data is loaded as `data/data.js` rather than fetched.
 
 ## Refresh the data
 
@@ -11,6 +19,7 @@ export HARVARD_API_KEY=your-key   # optional; Harvard is skipped without it
 python3 scripts/harvest.py      # re-queries the open APIs
 python3 scripts/harvest_smithsonian.py   # streams ~2.8 GB from the Smithsonian AWS bucket, keeps Nepal matches (roughly 10–15 min)
 # python3 scripts/harvest.py      # re-queries the open APIs (takes a few minutes)
+python3 scripts/fetch_thumbnails.py      # optional: small copies of openly licensed images (needs Pillow)
 python3 scripts/build_data.py   # rebuilds data/data.js and data/objects.csv
 ```
 
@@ -37,6 +46,12 @@ APIs change without notice. If a harvester fails, check that institution's curre
 | Wellcome Collection | `api.wellcomecollection.org/catalogue/v2/works` | keyword `Nepal`; weak matches flagged |
 | Smithsonian Institution | public S3 bucket `smithsonian-open-access` (metadata/edan/<unit>/) | Nepal term in place, culture, geoLocation or title (strong); elsewhere in record (weak) |
 | Harvard Art Museums | `api.harvardartmuseums.org/object` | `place=2035424` (Nepal) or `culture=37528164` (Nepalese), merged |
+
+## Images
+
+- `images/thumbs/` holds small (max 480 px) copies of openly licensed images only: Met Open Access, Cleveland, Smithsonian Open Access (all CC0) and Wellcome images marked Public Domain Mark, CC0 or CC BY 4.0.
+- V&A and Harvard images are not copied; the site links to them.
+- The Art Institute of Chicago's image server returned 403 with `Cf-Mitigated: challenge` and `Cross-Origin-Resource-Policy: same-origin` when checked on 16 Sep 2026, so its images cannot be shown on other websites. The downloader tries Chicago one image at a time, as Chicago's API guidelines ask, and stops at the first refusal. If it works from your own connection, rerun `build_data.py` and the copies will be used automatically.
 
 ## Reuse and caveats
 
