@@ -1,0 +1,725 @@
+{
+ "archives": [
+  {
+   "holder": "Smithsonian — National Anthropological Archives",
+   "country": "USA",
+   "title": "Mary Shepherd Slusser papers",
+   "ref": "NAA.1983.0407",
+   "dates": "c. 1950 – c. 1995",
+   "extent": "7.5 linear feet",
+   "kind": "Papers",
+   "note": "Nepal series: correspondence, subject file, maps and plans, writings; focused on her Nepal Mandala research. Access by appointment. Objects she donated are held in NMNH Anthropology (search 'Slusser' in Objects).",
+   "url": "https://sova.si.edu/record/naa.1983.0407",
+   "open": "Catalogue record CC0; digital content usage conditions may apply"
+  },
+  {
+   "holder": "Smithsonian — National Museum of Asian Art Archives",
+   "country": "USA",
+   "title": "Mary Slusser Collection",
+   "ref": "FSA.A2015.21",
+   "dates": "1933 – 2017",
+   "extent": "28.57 cubic feet",
+   "kind": "Papers and photographs",
+   "note": "Personal and professional files, research files, travel documents, prints, slides, negatives.",
+   "url": "https://sova.si.edu/record/fsa.a2015.21",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian — Human Studies Film Archives",
+   "country": "USA",
+   "title": "Todd Lewis films of Samyak and Panchare Festivals in Nepal",
+   "ref": "HSFA.1980.04",
+   "dates": "1980",
+   "extent": "9,500 ft 16mm colour sound film",
+   "kind": "Film",
+   "note": "Samyak festival and the 12-yearly Panchare festival, Asan Tol, Kathmandu.",
+   "url": "https://sova.si.edu/record/hsfa.1980.04",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian — Human Studies Film Archives",
+   "country": "USA",
+   "title": "National Anthropological Film Center films of Nepal",
+   "ref": "HSFA.1986.13NPL",
+   "dates": "1976 – 1981",
+   "extent": "16mm film",
+   "kind": "Film",
+   "note": "Digital content available on SOVA.",
+   "url": "https://sova.si.edu/record/hsfa.1986.13npl",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian — National Anthropological Archives",
+   "country": "USA",
+   "title": "Todd Lewis collection of photographs of Nepal",
+   "ref": "NAA.PhotoLot.86-34",
+   "dates": "Undated (copies made c. 1981–82)",
+   "extent": "23 glass negatives, 67 copy negatives, 50 nitrate negatives",
+   "kind": "Photographs",
+   "note": "Many copied from originals held by Nepalese individuals; religious sites, artwork, ceremonies.",
+   "url": "https://sova.si.edu/record/naa.photolot.86-34",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian — National Anthropological Archives",
+   "country": "USA",
+   "title": "John C. Cool and Dor Bahadur Bista field reports (MS 4831, 4832, 4833)",
+   "ref": "NAA.MS4831 / MS4832 / MS4833",
+   "dates": "April – May 1966",
+   "extent": "7, 6 and 14 pages",
+   "kind": "Manuscripts",
+   "note": "Gurung household in Rapti Valley; Khumbu and Pharak (Solukhumbu); Tharu peasant economy.",
+   "url": "https://sova.si.edu/record/naa.ms4831",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian — National Anthropological Archives",
+   "country": "USA",
+   "title": "John T. Hitchcock papers",
+   "ref": "NAA.2004-18",
+   "dates": "1944 – 1997",
+   "extent": "52 boxes",
+   "kind": "Papers",
+   "note": "Field notes, manuscripts, maps, photographs from 1960s research in India and Nepal.",
+   "url": "https://sova.si.edu/record/naa.2004-18",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian — National Museum of Asian Art Archives",
+   "country": "USA",
+   "title": "Stephen Eckerd Collection of Photographs",
+   "ref": "FSA.A2013.01",
+   "dates": "Undated",
+   "extent": "22 prints",
+   "kind": "Photographs",
+   "note": "Photographs and postcards of Nepal; digital content available.",
+   "url": "https://sova.si.edu/record/fsa.a2013.01",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "Smithsonian Institution Archives",
+   "country": "USA",
+   "title": "Nepal Tiger Project Oral History Interviews",
+   "ref": "Record Unit 9611",
+   "dates": "2000",
+   "extent": "4 audiotapes",
+   "kind": "Oral history",
+   "note": "",
+   "url": "https://sova.si.edu/record/sia.faru9611",
+   "open": "Catalogue record CC0"
+  },
+  {
+   "holder": "British Library (India Office Records)",
+   "country": "UK",
+   "title": "Hodgson Collection",
+   "ref": "—",
+   "dates": "1820s – 1850s",
+   "extent": "972 documents, c. 15,300 folios plus scrolls, notebooks, letters",
+   "kind": "Papers and manuscripts",
+   "note": "Deposited at the India Office Library in 1864. Online catalogue launched 2011. Further Hodgson papers at the Royal Asiatic Society, Zoological Society of London and Bodleian Library.",
+   "url": "http://hodgson.socanth.cam.ac.uk/chunkhtml/intro.html",
+   "open": "Catalogue freely online"
+  },
+  {
+   "holder": "Cambridge University Library",
+   "country": "UK",
+   "title": "Sanskrit Manuscripts (Wright and Bendall collections from Nepal)",
+   "ref": "e.g. Add.864, Add.1049.1",
+   "dates": "Medieval – 19th c.",
+   "extent": "Collection; being digitised",
+   "kind": "Manuscripts",
+   "note": "Original palm-leaf manuscripts procured in Nepal by Daniel Wright; Add.864 is an illustrated 16th-c. Nepalese accordion book. Bendall's 1883 catalogue is freely available.",
+   "url": "https://cudl.lib.cam.ac.uk/collections/sanskrit",
+   "open": "Digitised images on Cambridge Digital Library (check per-item rights)"
+  },
+  {
+   "holder": "University of Hamburg / National Archives of Nepal / Berlin State Library",
+   "country": "Germany / Nepal",
+   "title": "Nepal-German Manuscript Preservation Project (NGMPP) and Cataloguing Project (NGMCP)",
+   "ref": "NGMPP microfilm series",
+   "dates": "Filmed 1970 – 2001",
+   "extent": "c. 180,000 manuscripts, over 5 million folios",
+   "kind": "Microfilm surrogates",
+   "note": "Originals mostly remain in Nepal; microfilms at National Archives, Kathmandu; X-series (c. 700 MSS) held in Berlin, digitised and handed to Nepal in 2024. Useful for identifying texts that later left Nepal.",
+   "url": "https://www.aai.uni-hamburg.de/en/forschung/ngmcp.html",
+   "open": "Descriptive catalogue online"
+  },
+  {
+   "holder": "Wellcome Collection",
+   "country": "UK",
+   "title": "MS Indic delta 41 — Nihsvasatattvasamhita (copy)",
+   "ref": "MS Indic delta 41",
+   "dates": "c. 1912",
+   "extent": "1 manuscript",
+   "kind": "Manuscript",
+   "note": "Copied in Kathmandu by Bauddhaesevita Vajracarya for Dr Paira Mall from a palm-leaf original. Wellcome's Indic manuscripts may be catalogued by language rather than place, so a 'Nepal' keyword search likely undercounts.",
+   "url": "https://wellcomecollection.org/works/v2xcvzv6",
+   "open": "See record"
+  },
+  {
+   "holder": "Musée national des arts asiatiques – Guimet",
+   "country": "France",
+   "title": "Hodgson fonds (deposited by the Institut de France)",
+   "ref": "—",
+   "dates": "Deposited 1955",
+   "extent": "Not stated in source",
+   "kind": "Collection",
+   "note": "Also the Lionel Fournier donation (1989), with 16 Nepalese works including 13th-c. painted scrolls.",
+   "url": "https://www.parisladouce.com/2021/11/expo-nepal-art-de-la-vallee-de.html",
+   "open": "No open API found"
+  }
+ ],
+ "institutions": [
+  {
+   "name": "Art Institute of Chicago",
+   "country": "USA",
+   "harvested": true,
+   "access": "Open API",
+   "licence": "Data CC0; public-domain images via IIIF",
+   "web": "https://www.artic.edu/search?q=nepal",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=2577",
+   "notes": "84 records with a Nepalese place of origin (Nepal or Kathmandu Valley)."
+  },
+  {
+   "name": "Metropolitan Museum of Art",
+   "country": "USA",
+   "harvested": true,
+   "access": "Open API",
+   "licence": "Open Access CC0 for public-domain works",
+   "web": "https://www.metmuseum.org/art/collection/search/38536",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=1261",
+   "notes": "Search index returned 237 IDs; 10 object records now return 404 (logged, reason unknown)."
+  },
+  {
+   "name": "Cleveland Museum of Art",
+   "country": "USA",
+   "harvested": true,
+   "access": "Open API",
+   "licence": "CC0 open access",
+   "web": "https://clevelandart.org/art/1955.49",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=1033",
+   "notes": "374 of the records are folios of a single Gandavyuha-sutra manuscript. Provenance field included."
+  },
+  {
+   "name": "Victoria and Albert Museum",
+   "country": "UK",
+   "harvested": true,
+   "access": "Open API",
+   "licence": "Check V&A terms before reuse",
+   "web": "https://collections.vam.ac.uk/item/O456035/paubha-paubha",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=859",
+   "notes": "Object history (acquisition) text included where present."
+  },
+  {
+   "name": "Wellcome Collection",
+   "country": "UK",
+   "harvested": true,
+   "access": "Open API",
+   "licence": "Varies per image (Public Domain Mark, CC BY, etc.)",
+   "web": "https://wellcomecollection.org/works/v2xcvzv6",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=3950",
+   "notes": "Keyword match; weak matches are flagged and hidden by default."
+  },
+  {
+   "name": "Harvard Art Museums",
+   "country": "USA",
+   "harvested": true,
+   "access": "Open API with free key",
+   "licence": "Check Harvard API terms before reuse",
+   "web": "https://www.harvardartmuseums.org/collections/object/48002",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=3904",
+   "notes": "Records matched by place (Nepal) and culture (Nepalese) IDs. Mostly manuscripts, largely the Philip Hofer gift; also sculpture and 1980s photographs of Nepal."
+  },
+  {
+   "name": "Smithsonian Institution",
+   "country": "USA",
+   "harvested": true,
+   "access": "Open Access dataset on AWS (public S3 bucket, no key); SOVA site blocks scripts",
+   "licence": "CC0",
+   "web": "https://registry.opendata.aws/smithsonian-open-access/",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=468",
+   "notes": "Harvested units: Asian Art (objects and archives), Anthropological Archives, Film Archives, Natural History anthropology, Folklife, Cooper Hewitt. Only 2 strong Asian Art object records, so its Nepalese holdings are probably under-represented; search asia.si.edu directly. Natural History holds objects donated by Mary Slusser (e.g. accession 271950, 1967)."
+  },
+  {
+   "name": "British Museum",
+   "country": "UK",
+   "harvested": false,
+   "access": "No public API found; collection site blocks scripts",
+   "licence": "Unknown for bulk reuse",
+   "web": "https://www.britishmuseum.org",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=3817",
+   "notes": "HAR indexes 61 images of Nepalese sculpture. National museum deaccession restrictions apply."
+  },
+  {
+   "name": "Musée Guimet",
+   "country": "France",
+   "harvested": false,
+   "access": "No open API found",
+   "licence": "Unknown",
+   "web": "https://www.guimet.fr",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=860",
+   "notes": "Nepalese collection described as about 80 pieces. Holds two stelae documented as stolen."
+  },
+  {
+   "name": "Los Angeles County Museum of Art",
+   "country": "USA",
+   "harvested": false,
+   "access": "Collection site did not respond to scripted queries",
+   "licence": "Unknown for bulk reuse",
+   "web": "https://www.lacma.org",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=328",
+   "notes": "Nepalese holdings under activist scrutiny; no repatriations reported as of March 2025."
+  },
+  {
+   "name": "Museum of Fine Arts, Boston",
+   "country": "USA",
+   "harvested": false,
+   "access": "Collection site did not respond to scripted queries",
+   "licence": "Unknown for bulk reuse",
+   "web": "https://www.mfa.org",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=66",
+   "notes": "No Nepal-specific repatriation found in searches. Unchecked, not cleared."
+  },
+  {
+   "name": "Asian Art Museum, San Francisco",
+   "country": "USA",
+   "harvested": false,
+   "access": "Collection site did not respond to scripted queries",
+   "licence": "Unknown for bulk reuse",
+   "web": "https://www.asianart.org",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=862",
+   "notes": "Repatriation news concerns Thailand; no Nepal-specific claim found."
+  },
+  {
+   "name": "Rubin Museum of Himalayan Art",
+   "country": "USA",
+   "harvested": false,
+   "access": "Galleries closed Oct 2024; now a 'museum without walls'",
+   "licence": "Unknown",
+   "web": "https://rubinmuseum.org/wp-content/uploads/Rubin-Deaccessioned-Objects_100124.pdf",
+   "har": "https://www.himalayanart.org/search/set.cfm?setID=179",
+   "notes": "Nearly 4,000 Himalayan objects. Publishes a deaccession list with HAR numbers."
+  },
+  {
+   "name": "Himalayan Art Resources",
+   "country": "USA",
+   "harvested": false,
+   "access": "Image database indexed by holder, auction house and photo archive",
+   "licence": "See HAR copyright page",
+   "web": "https://www.himalayanart.org/collections/museums",
+   "har": "https://www.himalayanart.org/collections/museums",
+   "notes": "The auction-house and photographic-archive indexes are the most useful for provenance matching."
+  },
+  {
+   "name": "Nepal Heritage Recovery Campaign (NHRC)",
+   "country": "Nepal",
+   "harvested": false,
+   "access": "Website object pages (read by hand; no API reachable)",
+   "licence": "Reference only — link to NHRC pages",
+   "web": "https://nepalheritagerecoverycampaign.org/",
+   "har": "https://www.himalayanart.org/collections/museums",
+   "notes": "Kathmandu-based campaign working with the Department of Archaeology. Lists objects as Repatriation, Recovery in Progress and Found Heritage, with holder, accession number and original site. Statuses as shown on 16 Sep 2026; category pages may have further pages not read."
+  },
+  {
+   "name": "Ashmolean Museum, Oxford",
+   "country": "UK",
+   "harvested": false,
+   "access": "Not yet checked",
+   "licence": "Unknown",
+   "web": "https://www.ashmolean.org",
+   "har": "https://www.himalayanart.org/collections/museums",
+   "notes": "Holds a 7th–8th-c. Avalokiteshvara that NHRC identifies as stolen from Ta Baha, Kathmandu."
+  }
+ ],
+ "repatriation": [
+  {
+   "status": "Returned",
+   "year": "2000",
+   "holder": "Museum für Indische Kunst, Berlin",
+   "object": "Uma-Maheshvara stone relief",
+   "origin": "Wotol, Dhulikhel (stolen 1982)",
+   "detail": "Surfaced with a Wiesbaden dealer in 1995; formally returned 28 August 2000.",
+   "sources": [
+    "https://traffickingculture.org/encyclopedia/case-studies/uma-maheshwar-from-nepal/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2021",
+   "holder": "Dallas Museum of Art (on loan from a collector)",
+   "object": "Lakshmi-Narayana stele",
+   "origin": "Patko Tole, Patan (stolen 1984)",
+   "detail": "Sold at Sotheby's 1990; returned with the FBI in March 2021; reinstalled at its temple December 2021.",
+   "sources": [
+    "https://www.aljazeera.com/news/2021/12/4/stolen-nepali-statue-returns-to-its-temple-after-decades-in-us",
+    "https://hyperallergic.com/return-of-looted-nepal-statue-dallas-museum/",
+    "https://kanakmanidixit.com/gods-in-exile/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2021",
+   "holder": "Denver Art Museum",
+   "object": "Uma-Maheshvara, 10th c. (1980.231)",
+   "origin": "Gaa Hiti, Patan",
+   "detail": "Handed to the Nepal Embassy in Washington DC. Credit line: Gift of Dr. and Mrs. Edwin F. Ullman.",
+   "sources": [
+    "https://nepalitimes.com/here-now/2-more-nepali-antiquities-traced-to-us-museum",
+    "https://nepalheritagerecoverycampaign.org/object/uma-maheshvaramurti/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2021–22",
+   "holder": "Rubin Museum",
+   "object": "Garland-Bearing Apsaras, 14th c. (HAR 65290)",
+   "origin": "Itumbaha, Kathmandu (removed 1999)",
+   "detail": "Rubin deaccession list gives 2021; Rubin later co-funded the Itumbaha Museum (opened July 2023).",
+   "sources": [
+    "https://rubinmuseum.org/wp-content/uploads/Rubin-Deaccessioned-Objects_100124.pdf",
+    "https://defunct.rubinmuseum.org/?p=47393",
+    "https://nepalheritagerecoverycampaign.org/object/garland-bearing-apsaras/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2021–22",
+   "holder": "Rubin Museum",
+   "object": "Upper section of a torana, 17th c. (C2010.14; HAR 65866)",
+   "origin": "Yampi Mahavihara, Lalitpur",
+   "detail": "Memorandum of understanding signed with Nepal's consul general.",
+   "sources": [
+    "https://www.smithsonianmag.com/smart-news/rubin-museum-agrees-to-return-stolen-religious-artifacts-to-nepal-180979391/",
+    "https://nepalheritagerecoverycampaign.org/object/upper-section-of-a-torana/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2022",
+   "holder": "Metropolitan Police (from a London dealer)",
+   "object": "Carved wooden torana, 16th c.; stone kneeling devotee, 18th c.",
+   "origin": "Kathmandu Valley temples",
+   "detail": "Handed to Nepal's Ambassador in London on 18 March 2022 after Lost Arts of Nepal spotted them online.",
+   "sources": [
+    "https://www.gla.ac.uk/news/archiveofnews/2022/march/headline_844789_en.html"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2022",
+   "holder": "Metropolitan Museum of Art",
+   "object": "Shiva in Himalayan Abode with Ascetics, 10th c. (1995.570.5); salabhanjika temple strut, 13th c.",
+   "origin": "Kathmandu temples",
+   "detail": "Returned after internal provenance research. NHRC gives its origin as Kankeshwori Temple; credit line Gift of Evelyn Kossak. No longer in the Met's API (checked 16 Sep 2026).",
+   "sources": [
+    "https://www.theartnewspaper.com/2022/08/16/metropolitan-museum-returns-artefacts-nepal-provenance",
+    "https://nepalheritagerecoverycampaign.org/object/shiva-in-himalayan-abode-with-ascetics/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2023",
+   "holder": "Metropolitan Museum of Art",
+   "object": "Vishnu Flanked by Lakshmi and Garuda, 11th c.; wooden temple strut, 13th c.",
+   "origin": "Bungamati (Vishnu, stolen early 1980s)",
+   "detail": "Return announced October 2023. Possible overlap with the 2022 strut and ICOM's reference to a pillar — verify.",
+   "sources": [
+    "https://www.icij.org/investigations/hidden-treasures/the-met-to-return-two-ancient-artifacts-to-nepal/",
+    "https://icom.museum/en/news/restitutions-to-nepal-museums-committed-to-the-fight-against-traffic-of-cultural-goods/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2023",
+   "holder": "Rubin Museum and Dallas Museum of Art",
+   "object": "Pair of gilt-bronze Bhairava masks, 16th c.",
+   "origin": "Dolakha (stolen mid-1990s)",
+   "detail": "Returned via the Manhattan DA; shown in Kathmandu on 31 January 2024. The Rubin list's 'Hatha Dya as Bhairava' (deaccessioned 2023) may be one of these — unconfirmed.",
+   "sources": [
+    "https://www.artnews.com/art-news/news/nepal-stolen-artifacts-online-activists-repatriation-1234696476/",
+    "https://www.voanews.com/amp/nepal-pursues-sacred-items-smuggled-abroad-/7489988.html"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2024",
+   "holder": "Brooklyn Museum",
+   "object": "Uma-Maheshvara, 16th c.",
+   "origin": "Lalitpur",
+   "detail": "Passed to the Manhattan DA; reinstalled at its temple on 15 February 2024.",
+   "sources": [
+    "https://baynews9.com/fl/tampa/ap-top-news/2024/02/15/our-gods-were-locked-in-the-basement-now-nepal-is-pursuing-sacred-items-once-smuggled-abroad"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "Not stated",
+   "holder": "Yale University Art Gallery",
+   "object": "Buddhist Goddess Tara, late 9th – early 10th c. (2015.16.3)",
+   "origin": "Bir Bhadreshwor Mahadev Temple, Golmadhi Tol, Bhaktapur",
+   "detail": "Identified by the gallery's provenance research in 2021 and transferred to Nepal's Department of Archaeology.",
+   "sources": [
+    "https://artgallery.yale.edu/press-release/yale-university-art-gallery-announces-return-nepalese-sculpture-nepal"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2025",
+   "holder": "Art Institute of Chicago",
+   "object": "12th-c. sculpture",
+   "origin": "Guita Bahi, Kathmandu Valley",
+   "detail": "Announced March 2025. Possibly the Muchalinda Buddha (see that entry) — unconfirmed. Lost Arts of Nepal said this was one return against eight claims; NHRC's site lists eight AIC objects in total (two returned, six identified as stolen).",
+   "sources": [
+    "https://www.chicagobusiness.com/nonprofits-philanthropy/art-institute-returns-stolen-sculpture-nepal",
+    "https://hyperallergic.com/antiquities-looted-by-notorious-smuggling-ring-will-be-returned-to-nepal/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2025",
+   "holder": "Manhattan DA (incl. Univ. of Michigan Museum of Art; Ellsworth estate)",
+   "object": "20 antiquities incl. 9th-c. black stone Buddha; goddess figure; 15th-c. painting",
+   "origin": "Bungamati stupa (Buddha); Vishnu Devi Temple complex, Kathmandu (goddess)",
+   "detail": "Several linked to Subhash Kapoor investigations; announced March 2025.",
+   "sources": [
+    "https://hyperallergic.com/antiquities-looted-by-notorious-smuggling-ring-will-be-returned-to-nepal/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2023",
+   "holder": "Art Gallery of New South Wales, Australia",
+   "object": "Roof strut with shalabhanjika, 13th c. (33.2000.a-b)",
+   "origin": "Sulima Ratneswar temple, Patan",
+   "detail": "Returned May 2023; displayed at the National Museum, Kathmandu. Credit line: Bequest of Alex Biancardi 2000.",
+   "sources": [
+    "https://foreignpolicy.com/2023/11/12/nepal-stolen-artifacts-museums-religion-repatriation-heritage/",
+    "https://nepalheritagerecoverycampaign.org/object/strut-sulima-ratnesvara-temple/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "Not stated",
+   "holder": "Barakat (London dealer)",
+   "object": "Two temple artefacts",
+   "origin": "Nepal (removed late 1980s)",
+   "detail": "Voluntary return reported. NHRC separately lists a 17th-c. grey stone Kneeling Devotee from Wotu Tole, Kathmandu at Barakat's UK gallery (F.048_BAR_02) as Found Heritage; its current status is unclear and it may relate to this return or to the 2022 Metropolitan Police return.",
+   "sources": [
+    "https://www.returningheritage.com/united-kingdom",
+    "https://nepalheritagerecoverycampaign.org/object/kneeling-devotee/"
+   ]
+  },
+  {
+   "status": "Agreed, not returned",
+   "year": "Agreed 2013",
+   "holder": "Musée Guimet, Paris",
+   "object": "Vishnu with Lakshmi and Garuda, 12th c.",
+   "origin": "Chyasal (Chyasalhiti), Patan (stolen late 1970s)",
+   "detail": "Bought on the London market 1986; withdrawn from display; reported still in France in 2022.",
+   "sources": [
+    "https://ejournals.eu/pliki_artykulu_czasopisma/pelny_tekst/018e57a8-69ce-723d-9393-a3b586d9a01e/pobierz",
+    "https://nepalitimes.com/here-now/nepal-wants-stolen-antiquities-returned-from-france",
+    "https://wukali.com/2014/04/23/le-musee-guimet-et-ses-steles-volees-du-nepal/1511/"
+   ]
+  },
+  {
+   "status": "Agreed, not returned",
+   "year": "Agreed 2013",
+   "holder": "Musée Guimet, Paris",
+   "object": "Uma-Maheshvara (sources give 11th, 12th or 13th c.)",
+   "origin": "Nasamana Tole, Bhaktapur (stolen 23 May 1984)",
+   "detail": "Documented by Lain Singh Bangdel; reported still in France in 2022. NHRC lists it under Recovery in Progress and dates it 12th c.",
+   "sources": [
+    "https://nepalitimes.com/here-now/nepal-wants-stolen-antiquities-returned-from-france",
+    "https://nepalheritagerecoverycampaign.org/about-nhrc/",
+    "https://nepalheritagerecoverycampaign.org/object/uma-mahesvara/"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "Requested 2021",
+   "holder": "Art Institute of Chicago",
+   "object": "Necklace Inscribed with the Name of King Pratapamalladeva (Taleju Bhawani), 17th c. (2010.575)",
+   "origin": "Kathmandu Valley",
+   "detail": "ICOM (2024) described it as a loan from the Alsdorf Foundation since 1976; the AIC API credit line now reads 'Gift of the Alsdorf Foundation' (checked 16 Sep 2026). NHRC lists it as Found Heritage, from the Taleju Bhawani temple, Kathmandu.",
+   "sources": [
+    "https://icom.museum/en/news/restitutions-to-nepal-museums-committed-to-the-fight-against-traffic-of-cultural-goods/",
+    "https://www.artic.edu/artworks/130700",
+    "https://nepalheritagerecoverycampaign.org/object/taleju-bhavani-necklace/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "2025 (per NHRC)",
+   "holder": "Art Institute of Chicago",
+   "object": "Buddha Sheltered by the Serpent King Muchalinda (2014.1030)",
+   "origin": "Lalitpur",
+   "detail": "NHRC lists it as repatriated, and accession 2014.1030 no longer appears in the AIC API (checked 16 Sep 2026). It may be the 12th-c. sculpture from Guita Bahi, Patan, whose return AIC announced in March 2025, but I have not found a source that says so explicitly.",
+   "sources": [
+    "https://www.chicagobusiness.com/nonprofits-philanthropy/art-institute-returns-stolen-sculpture-nepal",
+    "https://nepalheritagerecoverycampaign.org/object/muchalinda-buddha-2/"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "2024",
+   "holder": "Los Angeles County Museum of Art",
+   "object": "12th-c. copper Buddha with scenes from his life",
+   "origin": "Not stated",
+   "detail": "Activists and scholars argue it should be returned; no LACMA repatriations reported as of March 2025.",
+   "sources": [
+    "https://www.hollywoodreporter.com/lifestyle/arts/lacma-looted-art-problem-1235823663/",
+    "https://hyperallergic.com/antiquities-looted-by-notorious-smuggling-ring-will-be-returned-to-nepal/"
+   ]
+  },
+  {
+   "status": "Claimed (low-confidence source)",
+   "year": "—",
+   "holder": "Collège de France, Paris",
+   "object": "16th-c. Malla-era paubha",
+   "origin": "Not stated",
+   "detail": "Single web source; not confirmed elsewhere.",
+   "sources": [
+    "https://askmeaboutnepal.com/post/the-homecoming-of-nepal-gods"
+   ]
+  },
+  {
+   "status": "Auction halted",
+   "year": "2021",
+   "holder": "Bonhams, Paris",
+   "object": "Five gilt metal deities from the Mulchok torana, Taleju temple, Patan",
+   "origin": "Mulchok, Taleju temple, Patan",
+   "detail": "Activists stopped the sale within 24 hours of listing; NHRC lists the figures as Found Heritage (location of the objects since then not stated).",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/five-deities-from-mulchok-toranataleju-temple/",
+    "https://foreignpolicy.com/2023/11/12/nepal-stolen-artifacts-museums-religion-repatriation-heritage/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "April (year not stated)",
+   "holder": "Art Institute of Chicago",
+   "object": "Chaturmukhi Shivalinga, 13th c.",
+   "origin": "Not stated",
+   "detail": "NHRC: handed to the Nepal Embassy in Washington DC in April.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/chaturmukhi-shivavlinga/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "Not stated",
+   "holder": "Subhash Kapoor's Manhattan gallery (seized)",
+   "object": "Seated Ganesh, 9th–10th c., brass",
+   "origin": "Original location unknown",
+   "detail": "NHRC case 3: seized from Kapoor's gallery; now at the National Museum, Chhauni.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/seated-ganesh/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "Not stated",
+   "holder": "Subhash Kapoor's Manhattan gallery (seized)",
+   "object": "Seated Buddha in Bhumisparsha Mudra, 14th c., brass",
+   "origin": "Original location unknown",
+   "detail": "NHRC case 3: seized from Kapoor's gallery; now at the National Museum, Chhauni.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/seated-buddha-in-bhumisparsa-mudra/"
+   ]
+  },
+  {
+   "status": "Returned",
+   "year": "Not stated",
+   "holder": "Subhash Kapoor's Manhattan gallery (seized)",
+   "object": "Wooden strut depicting an apsara, 13th c.",
+   "origin": "Original location unknown",
+   "detail": "NHRC case 3: seized from Kapoor's gallery; now at the National Museum, Chhauni.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/wooden-strut-depicting-apsara/"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Art Institute of Chicago",
+   "object": "God Vishnu with Goddess Lakshmi and His Mount, Garuda (2014.1026); NHRC: Sridhara Vishnu",
+   "origin": "Sakhona village, Lazimpat (per NHRC)",
+   "detail": "NHRC Found Heritage. Still in the AIC collection (checked 16 Sep 2026). Gift of Marilynn B. Alsdorf.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/sridhara-vishnu-2/",
+    "https://www.artic.edu/artworks/148368"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Art Institute of Chicago",
+   "object": "Bodhisattva Amoghapasha Lokeshvara, wood (2014.1032)",
+   "origin": "I Baha Bahi, Patan (per NHRC)",
+   "detail": "NHRC Found Heritage. Still in the AIC collection (checked 16 Sep 2026). Gift of Marilynn B. Alsdorf.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/amoghapasaa-lokeswora/",
+    "https://www.artic.edu/artworks/153537"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Art Institute of Chicago",
+   "object": "Garuda Standing with Hands in Anjalimudra, stone (2006.183)",
+   "origin": "Khapinchhen Tole, Patan (per NHRC)",
+   "detail": "NHRC Found Heritage. Still in the AIC collection (checked 16 Sep 2026). Gift of Marilynn B. Alsdorf.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/garuda/",
+    "https://www.artic.edu/artworks/151120"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Art Institute of Chicago",
+   "object": "Goddess Tara with Hand in Gesture of Reassurance, wood (2014.1035)",
+   "origin": "Lalitpur (per NHRC)",
+   "detail": "NHRC Found Heritage. Still in the AIC collection (checked 16 Sep 2026). Gift of Marilynn B. Alsdorf.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/goddess-tara/",
+    "https://www.artic.edu/artworks/148361"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Art Institute of Chicago",
+   "object": "Accession 2014.1021 — NHRC: Dancing Bhairav, stone, c. 1300; AIC title: Jvaradeva, God of Fever",
+   "origin": "Not stated",
+   "detail": "NHRC Found Heritage. The accession number matches but the titles differ; check which identification is correct before citing. Still in the AIC collection (checked 16 Sep 2026).",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/dancing-bhairava/",
+    "https://www.artic.edu/artworks/148371"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Ashmolean Museum, Oxford",
+   "object": "Avalokiteshvara, 7th–8th c., stone",
+   "origin": "Ta Baha monastery, Lagan Tole, Kathmandu (per NHRC)",
+   "detail": "NHRC Found Heritage. No accession number given; not yet checked against the Ashmolean's catalogue.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/avalokiteshvara-bodhisattva-buddhist-deity/"
+   ]
+  },
+  {
+   "status": "Claimed",
+   "year": "NHRC listing",
+   "holder": "Xanadu Gallery, San Francisco (dealer)",
+   "object": "Ganesh stele, 17th c., stone",
+   "origin": "Not stated",
+   "detail": "NHRC: offered for sale by the gallery. Current whereabouts not stated.",
+   "sources": [
+    "https://nepalheritagerecoverycampaign.org/object/ganesh/"
+   ]
+  }
+ ]
+}

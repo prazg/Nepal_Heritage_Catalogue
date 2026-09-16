@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nepalese heritage in collections abroad — open catalogue</title>
+<meta name="description" content="A single searchable catalogue of Nepalese objects, manuscripts and archives held in museums and libraries outside Nepal, built from open data, with a repatriation tracker.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&family=Noto+Serif+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to catalogue</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="deva" lang="ne">विदेशमा रहेका नेपाली सम्पदा</p>
+    <h1>Nepalese heritage in collections abroad</h1>
+    <p class="lede">Sculpture, paintings, manuscripts, photographs and papers from Nepal held by museums and archives outside the country, gathered from their open data into one place. Every record links back to the holding institution.</p>
+    <form class="search" role="search" onsubmit="return false">
+      <label for="q" class="visually-hidden">Search the catalogue</label>
+      <input id="q" type="search" placeholder="Search by deity, place, material, donor, accession number…" autocomplete="off">
+    </form>
+    <p class="stamp" id="stamp"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Catalogue sections">
+  <div class="wrap" role="tablist">
+    <button role="tab" data-tab="objects" aria-selected="true">Objects <span data-count="objects"></span></button>
+    <button role="tab" data-tab="archives" aria-selected="false">Archives and manuscripts <span data-count="archives"></span></button>
+    <button role="tab" data-tab="institutions" aria-selected="false">Institutions <span data-count="institutions"></span></button>
+    <button role="tab" data-tab="repatriation" aria-selected="false">Repatriation <span data-count="repatriation"></span></button>
+    <button role="tab" data-tab="about" aria-selected="false">About the data</button>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+
+  <section id="panel-objects" data-panel="objects">
+    <div class="layout">
+      <aside class="filters" aria-label="Filter objects">
+        <fieldset>
+          <legend>Held by</legend>
+          <div id="f-source"></div>
+        </fieldset>
+        <label class="field">Object type
+          <select id="f-type"><option value="">All types</option></select>
+        </label>
+        <label class="field">Period
+          <select id="f-century"><option value="">All periods</option></select>
+        </label>
+        <label class="check"><input type="checkbox" id="f-open"> Only records with an openly licensed image</label>
+        <label class="check"><input type="checkbox" id="f-prov"> Only records with provenance text</label>
+        <label class="check"><input type="checkbox" id="f-weak"> Include weak keyword matches</label>
+        <label class="field">Sort
+          <select id="f-sort">
+            <option value="rel">Institution order</option>
+            <option value="old">Earliest period first</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </label>
+        <button type="button" class="linkish" id="reset">Clear filters</button>
+      </aside>
+      <div>
+        <p class="resultline" id="resultline" aria-live="polite"></p>
+        <ul class="grid" id="grid"></ul>
+        <div class="more"><button type="button" id="more">Show more</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="panel-archives" data-panel="archives" hidden>
+    <p class="intro">Archival collections, manuscript holdings and surrogate copies. These are collection-level descriptions rather than item lists; follow each link for the finding aid or catalogue.</p>
+    <ul class="rows" id="archive-list"></ul>
+  </section>
+
+  <section id="panel-institutions" data-panel="institutions" hidden>
+    <p class="intro">Institutions covered so far. Those marked as harvested contribute records to the Objects tab; the rest need a manual search or a data export.</p>
+    <div class="tablewrap"><table class="inst" id="inst-table">
+      <thead><tr><th scope="col">Institution</th><th scope="col">Records here</th><th scope="col">Access</th><th scope="col">Reuse terms</th><th scope="col">Notes</th><th scope="col">Links</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="panel-repatriation" data-panel="repatriation" hidden>
+    <p class="intro">Returns, agreements and open claims reported in published sources. This is not a complete register: many claims are handled privately, and entries reflect what sources reported at the time. Check the linked sources before relying on any entry.</p>
+    <div class="statusfilter" id="statusfilter" role="group" aria-label="Filter by status"></div>
+    <ol class="claims" id="claim-list"></ol>
+  </section>
+
+  <section id="panel-about" data-panel="about" hidden>
+    <div class="prose" id="about"></div>
+  </section>
+</main>
+
+<dialog id="detail" aria-labelledby="d-title">
+  <form method="dialog"><button class="close" aria-label="Close">×</button></form>
+  <div id="d-body"></div>
+</dialog>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Records are copied from institutional open data and remain subject to each institution's terms. Corrections and additions are welcome through the project repository.</p>
+  </div>
+</footer>
+
+<script src="data/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
