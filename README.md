@@ -2,13 +2,6 @@
 
 A static, searchable catalogue of Nepalese objects, manuscripts and archives held outside Nepal, built from institutions' open data, with hand-curated archival collections and a repatriation tracker.
 
-## Publish on GitHub Pages
-
-1. Create a new repository and upload everything in this folder, keeping the structure (`index.html`, `assets/`, `data/`, `scripts/`).
-2. In the repository go to **Settings → Pages**, set the source to **Deploy from a branch**, choose `main` and `/ (root)`, and save.
-3. The site appears at `https://<your-username>.github.io/<repository-name>/` after a minute or two.
-
-The page also works when opened directly from disk, because the data is loaded as `data/data.js` rather than fetched.
 
 ## Refresh the data
 
