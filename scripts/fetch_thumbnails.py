@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Download small copies of OPENLY LICENSED images into images/thumbs/ so the site
+Download small copies of OPENLY LICENSED images into images/thumbs/<source>/ so the site
 does not depend on other servers allowing hotlinking.
 
 Why: several image servers now block embedding on other websites. On 16 Sep 2026
@@ -23,12 +23,13 @@ Run:  python3 scripts/fetch_thumbnails.py
 Requires: Pillow  (pip install Pillow)
 """
 import io, json, pathlib, sys, time, urllib.request
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from thumbpaths import THUMBS, rel_path, counts
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / "images" / "thumbs"
-OUT.mkdir(parents=True, exist_ok=True)
+THUMBS.mkdir(parents=True, exist_ok=True)
 MAX_SIDE = 480
 UA = {"User-Agent": "nepal-heritage-abroad/1.0 (non-commercial research catalogue; thumbnails of open-licence images)"}
 
@@ -47,7 +48,8 @@ def eligible(o):
 
 
 def fetch(o):
-    dest = OUT / f"{o['id']}.jpg"
+    dest = ROOT / rel_path(o["id"], SOURCE_COUNTS.get(o["id"].split("-", 1)[0], 0))
+    dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists():
         return o["id"], "exists"
     url = o["image"]
@@ -72,6 +74,7 @@ for extra in ("smithsonian_objects.json", "lacma_objects.json"):
     if pth.exists():
         objects += json.load(open(pth))
 todo = [o for o in objects if eligible(o)]
+SOURCE_COUNTS = counts([o["id"] for o in todo])
 aic = [o for o in todo if o["source"] == "Art Institute of Chicago"]
 rest = [o for o in todo if o["source"] != "Art Institute of Chicago"]
 results = {}
@@ -98,8 +101,10 @@ for i, o in enumerate(aic, 1):
         break
     time.sleep(1.0)
 
-have = sorted(p.stem for p in OUT.glob("*.jpg"))
-json.dump(have, open(ROOT / "data" / "thumbs.json", "w"))
+have = {p.stem: p.relative_to(ROOT).as_posix() for p in THUMBS.rglob("*.jpg")}
+json.dump(have, open(ROOT / "data" / "thumbs.json", "w"), indent=0, sort_keys=True)
+biggest = max((len(list(d.rglob("*.jpg"))), d.name) for d in THUMBS.iterdir() if d.is_dir())
+print(f"largest thumbnail folder: {biggest[1]} ({biggest[0]} files)")
 from collections import Counter
 print(Counter(s if not s.startswith("http") else s for s in results.values()))
-print(f"{len(have)} thumbnails available; total size {sum(p.stat().st_size for p in OUT.glob('*.jpg'))/1e6:.1f} MB")
+print(f"{len(have)} thumbnails available; total size {sum(p.stat().st_size for p in THUMBS.rglob('*.jpg'))/1e6:.1f} MB")

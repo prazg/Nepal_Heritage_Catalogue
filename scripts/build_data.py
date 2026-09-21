@@ -72,10 +72,12 @@ if man_path.exists():  # hand-entered records from institutions without open dat
     objects += man
 
 thumbs_path = ROOT / "data" / "thumbs.json"
-thumbs = set(json.load(open(thumbs_path))) if thumbs_path.exists() else set()
+thumbs = json.load(open(thumbs_path)) if thumbs_path.exists() else {}
+if isinstance(thumbs, list):  # older flat format
+    thumbs = {t: f"images/thumbs/{t}.jpg" for t in thumbs}
 for o in objects:
-    if o["id"] in thumbs:
-        o["thumb"] = f"images/thumbs/{o['id']}.jpg"
+    if o["id"] in thumbs and (ROOT / thumbs[o["id"]]).exists():
+        o["thumb"] = thumbs[o["id"]]
 
 for o in objects:
     if o["id"] in CLAIM_LINKS:
