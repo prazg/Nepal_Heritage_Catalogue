@@ -1,14 +1,6 @@
-# Nepalese heritage in collections abroad
+# Nepalese heritage in collections abroad | Nepalese Heritage Catalogue
 
 A static, searchable catalogue of Nepalese objects, manuscripts and archives held outside Nepal, built from institutions' open data, with hand-curated archival collections and a repatriation tracker.
-
-## Publish on GitHub Pages
-
-1. Create a new repository and upload everything in this folder, keeping the structure (`index.html`, `assets/`, `data/`, `scripts/`).
-2. In the repository go to **Settings → Pages**, set the source to **Deploy from a branch**, choose `main` and `/ (root)`, and save.
-3. The site appears at `https://<your-username>.github.io/<repository-name>/` after a minute or two.
-
-The page also works when opened directly from disk, because the data is loaded as `data/data.js` rather than fetched.
 
 ## Refresh the data
 
@@ -52,26 +44,7 @@ APIs change without notice. If a harvester fails, check that institution's curre
 
 ## British Museum records
 
-The British Museum asks for permission before text and data mining; this project has that permission (keep the correspondence on file). Its site is protected by Cloudflare, so the export runs in your own browser rather than as a scraper:
-
-Preferred: use Collection online's own download of search results (the 21 Sep 2026 export is in `data/raw/`). Import with `python3 scripts/import_bm.py data/raw/<file>.csv`.
-
-Fallback if the download option is unavailable:
-
-1. Open `https://www.britishmuseum.org/collection/search?keyword=nepal` (or a narrower filtered search).
-2. Open the browser console (F12 → Console), paste `scripts/bm_export_console.js`, press Enter. It reads one page every 3 seconds and downloads `bm_nepal.csv`.
-3. `python3 scripts/import_bm.py path/to/bm_nepal.csv` then `python3 scripts/build_data.py`.
-
-These records are CC BY-NC-SA 4.0, credit "© The Trustees of the British Museum", and are stored separately in `data/bm_objects.json`. Keep the site non-commercial. Images are displayed from the Museum's server with credit and are not copied into this repository. Object links are built from museum numbers for the Asia and Money and Medals departments (pattern verified); other departments link to a search for the museum number.
-
 ## French museums (Joconde)
-
-Joconde is the national catalogue of the Musées de France (Ministère de la Culture, Licence Ouverte / Open Licence 2.0, CSV about 1.1 GB, updated weekly on data.gouv.fr). It includes the Musée Guimet (about 3,203 records) and other French museums.
-
-1. On your own computer: `python3 scripts/filter_joconde.py` — streams the file from data.gouv.fr and writes only Nepal-related rows to `joconde_nepal.csv` (the 1.1 GB file is not saved).
-2. `python3 scripts/import_joconde.py data/raw/<pop export>.xlsx joconde_nepal.csv` — accepts POP exports and the filtered CSV together, de-duplicating by Joconde reference.
-
-POP exports only contain the fields searched: a search on author/school (AUTR, PAUT, ATTR, ECOL) misses most objects. Search "Lieu de création / utilisation" (LIEUX) for Népal, or use `filter_joconde.py`, which checks every field.
 
 ## Images
 
