@@ -17,7 +17,7 @@
   const centuryNum = (c) => { const m = /^(\d+)/.exec(c || ""); return m ? +m[1] : 999; };
   D.objects.forEach((o, i) => {
     o._i = i;
-    o._hay = [o.title, o.date, o.type, o.medium, o.place, o.accession, o.credit, o.provenance, o.source].join(" ").toLowerCase();
+    o._hay = [o.title, o.date, o.type, o.medium, o.place, o.accession, o.credit, o.provenance, o.description, o.source].join(" ").toLowerCase();
   });
   const hayOf = (obj) => Object.values(obj).join(" ").toLowerCase();
   D.archives.forEach((a) => (a._hay = hayOf(a)));
@@ -30,7 +30,7 @@
 
   // ---------- header ----------
   const fmt = (n) => n.toLocaleString("en-GB");
-  $("#stamp").textContent = `${fmt(D.objects.length)} records from ${SOURCE_ORDER.length} collections via open APIs and the Smithsonian Open Access dataset, harvested ${D.harvested}. Figures change as institutions update their catalogues.`;
+  $("#stamp").textContent = `${fmt(D.objects.length)} records from ${SOURCE_ORDER.length} collections, gathered from open APIs, the Smithsonian Open Access dataset and a British Museum export (used with permission). Last updated ${D.built}. Figures change as institutions update their catalogues.`;
 
   // ---------- filter controls ----------
   const bySource = {};
@@ -122,16 +122,16 @@
   function openDetail(o) {
     const row = (k, v) => (v ? `<dt>${k}</dt><dd>${esc(v)}</dd>` : "");
     $("#d-body").innerHTML = `<div class="d-grid">
-      <div><div class="dimg">${imageSources(o, true).length ? imgTag(o, true) : `<div class="thumb">${placeholder(o)}</div>`}</div>${o.thumb ? `<p class="meta small">Image copy hosted with this catalogue under its open licence (${esc(o.dataLicence)}).</p>` : ""}</div>
+      <div><div class="dimg">${imageSources(o, true).length ? imgTag(o, true) : `<div class="thumb">${placeholder(o)}</div>`}</div>${o.source === "British Museum" && o.image ? `<p class="meta small">Image © The Trustees of the British Museum, CC BY-NC-SA 4.0, shown from the Museum&#39;s server.</p>` : ""}${o.thumb ? `<p class="meta small">Image copy hosted with this catalogue under its open licence (${esc(o.dataLicence)}).</p>` : ""}</div>
       <div>
         <h2 id="d-title">${esc(o.title)}</h2>
         <p class="meta">${esc(o.source)}, ${esc(o.country)}</p>
         ${o.claim ? `<p class="flag claim">${esc(o.claim)}</p>` : ""}
         <dl class="facts">
-          ${row("Date", o.date)}${row("Type", o.type)}${row("Medium", o.medium)}${row("Place", o.place)}
+          ${row("Description", o.description)}${row("Date", o.date)}${row("Type", o.type)}${row("Medium", o.medium)}${row("Place", o.place)}
           ${row("Accession", o.accession)}${row("Credit", o.credit)}${row("Data terms", o.dataLicence)}${row("Why listed", o.matchBasis)}
         </dl>
-        ${o.provenance ? `<h3>Provenance as published by the institution</h3><p class="prov">${esc(o.provenance)}</p>` : ""}
+        ${o.provenance ? `<h3>${o.source === "British Museum" ? "Acquisition history as recorded by the British Museum" : "Provenance as published by the institution"}</h3><p class="prov">${esc(o.provenance)}</p>` : ""}
         <a class="btnlink" href="${esc(o.url)}" target="_blank" rel="noopener">View record at ${esc(o.source)}</a>
       </div></div>`;
     $("#detail").showModal();
@@ -155,7 +155,7 @@
     document.querySelector('[data-count="institutions"]').textContent = `(${list.length})`;
     $("#inst-table tbody").innerHTML = list.map((r) => `<tr>
       <td data-l="Institution">${esc(r.name)}<br><span class="no">${esc(r.country)}</span></td>
-      <td data-l="Records here">${r.harvested ? `<span class="yes">${fmt(Object.entries(bySource).filter(([k]) => k === r.name || (r.name === "Smithsonian Institution" && k.startsWith("Smithsonian"))).reduce((s, [, n]) => s + n, 0))}</span>` : '<span class="no">Not harvested</span>'}</td>
+      <td data-l="Records here">${(r.harvested || bySource[r.name] || Object.keys(bySource).some((k) => k.startsWith(r.name))) ? `<span class="yes">${fmt(Object.entries(bySource).filter(([k]) => k === r.name || k.startsWith(r.name + ",") || (r.name === "French museums (Joconde)" && (D.objects.find((o) => o.source === k) || {}).dataLicence?.includes("Joconde")) || (r.name === "Smithsonian Institution" && k.startsWith("Smithsonian"))).reduce((s, [, n]) => s + n, 0))}</span>` : '<span class="no">Not harvested</span>'}</td>
       <td data-l="Access">${esc(r.access)}</td><td data-l="Reuse terms">${esc(r.licence)}</td><td data-l="Notes">${esc(r.notes)}</td>
       <td data-l="Links"><a href="${esc(r.web)}" target="_blank" rel="noopener">Institution</a><a href="${esc(r.har)}" target="_blank" rel="noopener">Himalayan Art Resources</a></td>
     </tr>`).join("");
@@ -181,7 +181,7 @@
     <h2>What this is</h2>
     <p>A starting catalogue of Nepalese material held outside Nepal, built only from data that institutions publish openly, plus hand-entered archival collections and a repatriation tracker drawn from published reporting. It is incomplete by design: many major holders do not publish open data.</p>
     <h2>How records were selected</h2>
-    <p>Each harvested record carries a “Why listed” note. Art Institute of Chicago: place of origin names Nepal or a Kathmandu Valley city. Met: the API's <code>geoLocation=Nepal</code> filter. Cleveland: culture field contains Nepal. V&amp;A: place name Nepal. Smithsonian: records from the CC0 Open Access dataset on AWS whose place, culture or title names Nepal or a Kathmandu Valley city; records that only mention Nepal in notes or citations are marked weak. Natural History anthropology records include donor and collector names, so a search for Slusser or Hitchcock finds both objects and papers. Harvard: the API's place ID for Nepal plus its culture ID for Nepalese, merged. Wellcome: keyword search, so modern books and unrelated items appear; records without a Nepalese term in title or place are marked weak and hidden by default.</p>
+    <p>Each harvested record carries a “Why listed” note. Art Institute of Chicago: place of origin names Nepal or a Kathmandu Valley city. Met: the API's <code>geoLocation=Nepal</code> filter. Cleveland: culture field contains Nepal. V&amp;A: place name Nepal. Smithsonian: records from the CC0 Open Access dataset on AWS whose place, culture or title names Nepal or a Kathmandu Valley city; records that only mention Nepal in notes or citations are marked weak. Natural History anthropology records include donor and collector names, so a search for Slusser or Hitchcock finds both objects and papers. French museums: records from Joconde, the national catalogue of the Musées de France (Licence Ouverte 2.0, Ministère de la Culture), where Nepal appears in the school or place-of-creation fields. British Museum: records exported from its collection search with the Museum's permission; they are licensed CC BY-NC-SA 4.0 (© The Trustees of the British Museum), which differs from the CC0 data elsewhere, and are marked so on each record. LACMA: records from collections.lacma.org (whose robots rules allow automated access) searched for Nepal and Nepalese place names; strong matches have Nepal, or a Newar artist, as place made. Harvard: the API's place ID for Nepal plus its culture ID for Nepalese, merged. Wellcome: keyword search, so modern books and unrelated items appear; records without a Nepalese term in title or place are marked weak and hidden by default.</p>
     <p>Period filters are rough buckets derived automatically from free-text dates and will misplace some records.</p>
     <h2>Reuse terms</h2>
     <p>Terms differ by institution and sometimes by record. Chicago and Cleveland data are CC0; Harvard data comes through a keyed API whose terms should be checked before republishing; Met data is CC0 for Open Access works; Wellcome images carry per-item licences; V&amp;A reuse terms should be checked on the V&amp;A site before republishing. Images are shown from the institutions' own servers, and only where the record marks the image as openly licensed, except V&amp;A thumbnails, which are shown for identification and link back to the source.</p>
@@ -190,7 +190,7 @@
     <p>Provenance text is reproduced as published by each museum. An absence of provenance, or a clean-looking provenance, is not evidence that an object left Nepal lawfully. Equally, appearing in this catalogue says nothing about an object's legal status.</p>
     <p>The British Museum, Musée Guimet, LACMA, the Museum of Fine Arts Boston, and the Asian Art Museum San Francisco are listed under Institutions but not harvested.</p>
     <h2>Images</h2>
-    <p>Openly licensed images from the Met, Cleveland, Wellcome and the Smithsonian are served as small copies stored with this catalogue, so they load even if the original server changes its rules. V&amp;A and Harvard images are shown from the institutions' own servers and may not always load. The Art Institute of Chicago's image server currently blocks display on other websites (it returns a Cloudflare challenge and a same-origin resource policy), so Chicago records show only a blurred colour preview supplied by its API; the full image is on the museum's own page.</p>
+    <p>Openly licensed images from the Met, Cleveland, Wellcome, the Smithsonian and LACMA (public-domain works) are served as small copies stored with this catalogue, so they load even if the original server changes its rules. V&amp;A, Harvard and British Museum images are shown from the institutions' own servers and may not always load. The Art Institute of Chicago's image server currently blocks display on other websites (it returns a Cloudflare challenge and a same-origin resource policy), so Chicago records show only a blurred colour preview supplied by its API; the full image is on the museum's own page.</p>
     <h2>Downloads</h2>
     <p><a href="data/objects.csv">objects.csv</a> (flat table), <a href="data/objects.json">objects.json</a>, <a href="data/curated.json">curated.json</a> (archives, institutions, repatriation). Built ${esc(D.built)}.</p>`;
 

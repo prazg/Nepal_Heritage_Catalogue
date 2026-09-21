@@ -12,6 +12,7 @@ What is copied (open licences only):
   - Met Open Access (CC0), Cleveland (CC0), Smithsonian Open Access (CC0)
   - Wellcome images marked Public Domain Mark, CC0 or CC BY 4.0 (attribution shown on site)
   - Art Institute of Chicago public-domain images (CC0) — attempted politely, may be blocked
+  - LACMA public-domain images (released by LACMA without restriction)
 Not copied (reuse terms less clear, so the site links to them instead):
   - Victoria and Albert Museum, Harvard Art Museums
 
@@ -31,7 +32,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 MAX_SIDE = 480
 UA = {"User-Agent": "nepal-heritage-abroad/1.0 (non-commercial research catalogue; thumbnails of open-licence images)"}
 
-SELF_HOST = {"Metropolitan Museum of Art", "Cleveland Museum of Art", "Wellcome Collection", "Art Institute of Chicago"}
+SELF_HOST = {"Metropolitan Museum of Art", "Cleveland Museum of Art", "Wellcome Collection", "Art Institute of Chicago", "Los Angeles County Museum of Art"}
 WELLCOME_OK = ("Public Domain Mark", "CC0", "Attribution 4.0 International (CC BY 4.0)")
 
 
@@ -66,9 +67,10 @@ def fetch(o):
 
 
 objects = json.load(open(ROOT / "data" / "objects.json"))
-si = ROOT / "data" / "smithsonian_objects.json"
-if si.exists():
-    objects += json.load(open(si))
+for extra in ("smithsonian_objects.json", "lacma_objects.json"):
+    pth = ROOT / "data" / extra
+    if pth.exists():
+        objects += json.load(open(pth))
 todo = [o for o in objects if eligible(o)]
 aic = [o for o in todo if o["source"] == "Art Institute of Chicago"]
 rest = [o for o in todo if o["source"] != "Art Institute of Chicago"]

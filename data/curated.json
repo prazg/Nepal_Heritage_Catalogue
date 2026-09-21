@@ -167,6 +167,18 @@
    "note": "Also the Lionel Fournier donation (1989), with 16 Nepalese works including 13th-c. painted scrolls.",
    "url": "https://www.parisladouce.com/2021/11/expo-nepal-art-de-la-vallee-de.html",
    "open": "No open API found"
+  },
+  {
+   "holder": "Los Angeles County Museum of Art (published catalogue)",
+   "country": "USA",
+   "title": "Art of Nepal: a catalogue of the Los Angeles County Museum of Art collection — Pratapaditya Pal",
+   "ref": "Internet Archive: artofnepalcatalo0000palp",
+   "dates": "Published 1985 (verify on title page)",
+   "extent": "Book",
+   "kind": "Published catalogue",
+   "note": "LACMA's catalogue of its Nepalese collection. Useful for fuller entries on LACMA objects, and for checking whether objects catalogued in the 1980s are still in the online collection.",
+   "url": "https://archive.org/details/artofnepalcatalo0000palp",
+   "open": "In copyright; available to borrow from the Internet Archive, not an open download"
   }
  ],
  "institutions": [
@@ -243,32 +255,32 @@
   {
    "name": "British Museum",
    "country": "UK",
-   "harvested": false,
-   "access": "No public API found; collection site blocks scripts",
-   "licence": "Unknown for bulk reuse",
-   "web": "https://www.britishmuseum.org",
+   "harvested": true,
+   "access": "Collection online 'download results' export (21 Sep 2026), used with the Museum's permission for text and data mining",
+   "licence": "CC BY-NC-SA 4.0 — © The Trustees of the British Museum",
+   "web": "https://www.britishmuseum.org/collection/search?keyword=nepal",
    "har": "https://www.himalayanart.org/search/set.cfm?setID=3817",
-   "notes": "HAR indexes 61 images of Nepalese sculpture. National museum deaccession restrictions apply."
+   "notes": "3,678 records from a 'nepal' keyword search; 3,625 name Nepal in place, findspot, ethnic group, culture or ruler (the rest are hidden as weak matches). Mostly coins and banknotes (Money and Medals, 2,491) and Asia department objects (1,172), including prehistoric celts, Malla-period coins and 12th–13th-c. manuscript covers. 2,791 records include acquisition history. Images are shown from the Museum's server with credit, not copied."
   },
   {
    "name": "Musée Guimet",
    "country": "France",
    "harvested": false,
-   "access": "No open API found",
+   "access": "No open API on the museum site; about 3,203 Guimet records are in France's Joconde database (open data, data.gouv.fr / POP)",
    "licence": "Unknown",
-   "web": "https://www.guimet.fr",
+   "web": "https://www.guimet.fr/en/collections/himalayan-world",
    "har": "https://www.himalayanart.org/search/set.cfm?setID=860",
-   "notes": "Nepalese collection described as about 80 pieces. Holds two stelae documented as stolen."
+   "notes": "Himalayan section of about 2,000 works, mostly Tibetan; the museum's Nepalese collection is about 100–130 pieces (sources differ). Joconde is incomplete for Guimet: of 3,277 Guimet records, only one is attributed to Nepal (MA 6148, gilt copper Lakshmi-Narayana, dation 1994, ex-Krishna Riboud collection), and the three Nepalese highlights on the museum's website are not in Joconde. Those three are entered by hand: priest crown dated 1145 (MA 4929), Birth of the Buddha (MA 1779), Bhairava mask (MA 5941). Holds the Hodgson fonds (deposited 1955) and two stone stelae documented as stolen (see Repatriation)."
   },
   {
    "name": "Los Angeles County Museum of Art",
    "country": "USA",
-   "harvested": false,
-   "access": "Collection site did not respond to scripted queries",
-   "licence": "Unknown for bulk reuse",
-   "web": "https://www.lacma.org",
+   "harvested": true,
+   "access": "collections.lacma.org search (its robots.txt allows automated access), via the site's own search endpoint; www.lacma.org is not used",
+   "licence": "Public-domain images released by LACMA without restriction; other images and data per LACMA terms",
+   "web": "https://collections.lacma.org/search?q=nepal",
    "har": "https://www.himalayanart.org/search/set.cfm?setID=328",
-   "notes": "Nepalese holdings under activist scrutiny; no repatriations reported as of March 2025."
+   "notes": "861 records from searches for nepal, kathmandu, newar, bhaktapur, patan and lalitpur; 835 have Nepal (or a Newar artist) as place made. Mostly books and manuscripts (433 books, 190 manuscripts), 117 sculptures. Large Slusser gift (358 objects credited to Mr. and Mrs. H. Robert Slusser, plus gifts from Dr. Mary Slusser and her estate), 209 from Dr. and Mrs. Robert S. Coles, 43 from the Heeramaneck collection; 75 items catalogued to Dharmachakra Mahavihara, Kathmandu."
   },
   {
    "name": "Museum of Fine Arts, Boston",
@@ -329,6 +341,16 @@
    "web": "https://www.ashmolean.org",
    "har": "https://www.himalayanart.org/collections/museums",
    "notes": "Holds a 7th–8th-c. Avalokiteshvara that NHRC identifies as stolen from Ta Baha, Kathmandu."
+  },
+  {
+   "name": "French museums (Joconde)",
+   "country": "France",
+   "harvested": true,
+   "access": "Joconde, the national catalogue of the Musées de France, via exports from pop.culture.gouv.fr (21 Sep 2026)",
+   "licence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
+   "web": "https://pop.culture.gouv.fr/notice/joconde/50050016608",
+   "har": "https://www.himalayanart.org/collections/museums",
+   "notes": "47 records from 8 museums: Musée de la musique, Paris (24, mainly singing bowls); Musée des explorations du monde, Cannes (15); Musée Antoine Vivenel, Compiègne (3); Guimet (1); and one each in Toulouse, La Roche-sur-Yon, Nuits-Saint-Georges and Besançon. Found by searching Nepal in the place fields and by scanning all 3,277 Guimet records in Joconde."
   }
  ],
  "repatriation": [
@@ -564,12 +586,13 @@
    "status": "Claimed",
    "year": "2024",
    "holder": "Los Angeles County Museum of Art",
-   "object": "12th-c. copper Buddha with scenes from his life",
+   "object": "Buddha Shakyamuni and Scenes from the Life of the Buddha, 12th c., unalloyed copper (M.82.165.6)",
    "origin": "Not stated",
-   "detail": "Activists and scholars argue it should be returned; no LACMA repatriations reported as of March 2025.",
+   "detail": "Activists and scholars argue it should be returned; no LACMA repatriations reported as of March 2025. Identified in LACMA's collection data by matching the reported date, material, subject and donor: credit line 'Gift of Mr. and Mrs. Michael Phillips'.",
    "sources": [
     "https://www.hollywoodreporter.com/lifestyle/arts/lacma-looted-art-problem-1235823663/",
-    "https://hyperallergic.com/antiquities-looted-by-notorious-smuggling-ring-will-be-returned-to-nepal/"
+    "https://hyperallergic.com/antiquities-looted-by-notorious-smuggling-ring-will-be-returned-to-nepal/",
+    "https://collections.lacma.org/object/40129"
    ]
   },
   {

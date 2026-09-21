@@ -40,16 +40,46 @@ CLAIM_LINKS = {
     "aic-151120": "NHRC identifies this as stolen from Khapinchhen Tole, Patan (see Repatriation).",
     "aic-148361": "NHRC identifies this as stolen, from Lalitpur (see Repatriation).",
     "aic-148371": "NHRC lists this accession as stolen under the title Dancing Bhairav (see Repatriation).",
+    "lacma-40129": "Matches the 12th-c. copper Buddha with life scenes that activists have asked LACMA to return (see Repatriation).",
 }
-for o in objects:
-    if o["id"] in CLAIM_LINKS:
-        o["claim"] = CLAIM_LINKS[o["id"]]
+
+bm_path = ROOT / "data" / "bm_objects.json"
+if bm_path.exists():  # produced by scripts/import_bm.py (British Museum, CC BY-NC-SA 4.0, used with permission)
+    bm = json.load(open(bm_path))
+    for o in bm:
+        o["century"] = _bucket(o["date"])
+    objects += bm
+
+lacma_path = ROOT / "data" / "lacma_objects.json"
+if lacma_path.exists():  # produced by scripts/harvest_lacma.py
+    lac = json.load(open(lacma_path))
+    for o in lac:
+        o["century"] = _bucket(o["date"])
+    objects += lac
+
+jc_path = ROOT / "data" / "joconde_objects.json"
+if jc_path.exists():  # produced by scripts/import_joconde.py (Licence Ouverte 2.0, Ministère de la Culture)
+    jc = json.load(open(jc_path))
+    for o in jc:
+        o["century"] = _bucket(o["date"])
+    objects += jc
+
+man_path = ROOT / "data" / "manual_objects.json"
+if man_path.exists():  # hand-entered records from institutions without open data (facts only, sourced per record)
+    man = json.load(open(man_path))
+    for o in man:
+        o["century"] = _bucket(o["date"])
+    objects += man
 
 thumbs_path = ROOT / "data" / "thumbs.json"
 thumbs = set(json.load(open(thumbs_path))) if thumbs_path.exists() else set()
 for o in objects:
     if o["id"] in thumbs:
         o["thumb"] = f"images/thumbs/{o['id']}.jpg"
+
+for o in objects:
+    if o["id"] in CLAIM_LINKS:
+        o["claim"] = CLAIM_LINKS[o["id"]]
 
 payload = {
     "built": datetime.date.today().isoformat(),
