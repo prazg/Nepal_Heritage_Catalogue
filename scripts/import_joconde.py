@@ -79,6 +79,14 @@ for path in sys.argv[1:]:
             "joconde_museum": museum,
         }
 
+pop_img = ROOT / "data" / "raw" / "joconde_pop_images.json"
+imgs = json.load(open(pop_img)) if pop_img.exists() else {}
+for ref, o in out.items():
+    v = imgs.get(ref, {})
+    o["imageKey"] = "joconde"
+    ok = v.get("IMG") and (v.get("DIFFU") or "").lower() != "non"
+    o["imageCandidate"] = "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/" + v["IMG"][0] if ok else ""
+    o["imageCreditText"] = ((v.get("COPY") or "© " + o["source"]) + " — via POP, Ministère de la Culture; shown with permission.") if ok else ""
 json.dump(list(out.values()), open(ROOT / "data" / "joconde_objects.json", "w"), indent=1, ensure_ascii=False)
 from collections import Counter
 print(len(out), "records;", Counter(o["strength"] for o in out.values()), "; by museum:", Counter(o["joconde_museum"] for o in out.values()))

@@ -1,0 +1,21 @@
+{
+ "_comment": "Live images: shown from each institution's own server, never copied into this repository. Turn a source on only when its terms allow it or its permission is confirmed; keep written confirmations on file.",
+ "live_images": {
+  "ashmolean": {
+   "on": true,
+   "basis": "Permission confirmed by the project owner, 21 Sep 2026 (Ashmolean Picture Library)."
+  },
+  "rubin": {
+   "on": true,
+   "basis": "Rubin website terms allow limited non-commercial, educational use with citation of source and www.rubinmuseum.org (checked 21 Sep 2026)."
+  },
+  "joconde": {
+   "on": true,
+   "basis": "Permission from the Joconde museums' rights holders confirmed by the project owner, 21 Sep 2026 (all 39 photos). Records marked DIFFU=non remain excluded."
+  },
+  "guimet": {
+   "on": true,
+   "basis": "Permission from Guimet / RMN-Grand Palais confirmed by the project owner, 21 Sep 2026."
+  }
+ }
+}

@@ -179,6 +179,18 @@
    "note": "LACMA's catalogue of its Nepalese collection. Useful for fuller entries on LACMA objects, and for checking whether objects catalogued in the 1980s are still in the online collection.",
    "url": "https://archive.org/details/artofnepalcatalo0000palp",
    "open": "In copyright; available to borrow from the Internet Archive, not an open download"
+  },
+  {
+   "holder": "Rubin Museum of Himalayan Art",
+   "country": "USA",
+   "title": "Project Himalayan Art — essays and virtual exhibition on Nepalese art",
+   "ref": "rubinmuseum.org/projecthimalayanart",
+   "dates": "Online",
+   "extent": "Essays and exhibition pages",
+   "kind": "Educational resource",
+   "note": "Essays and exhibition sections on Nepalese art, e.g. Newar lost-wax casting, Jivarama's sketchbook (the earliest dated Newar artist's sketchbook), the Yetakha Baha torana and dating Nepalese stone sculpture. Discusses objects in many collections, including works still in Nepal, so it is a reference rather than a list of holdings.",
+   "url": "https://rubinmuseum.org/projecthimalayanart/?s=Nepal",
+   "open": "Free to read online"
   }
  ],
  "institutions": [
@@ -267,7 +279,7 @@
    "country": "France",
    "harvested": false,
    "access": "No open API on the museum site; about 3,203 Guimet records are in France's Joconde database (open data, data.gouv.fr / POP)",
-   "licence": "Unknown",
+   "licence": "Photographs © RMN-Grand Palais (MNAAG, Paris), shown live from the museum's server with permission (21 Sep 2026)",
    "web": "https://www.guimet.fr/en/collections/himalayan-world",
    "har": "https://www.himalayanart.org/search/set.cfm?setID=860",
    "notes": "Himalayan section of about 2,000 works, mostly Tibetan; the museum's Nepalese collection is about 100–130 pieces (sources differ). Joconde is incomplete for Guimet: of 3,277 Guimet records, only one is attributed to Nepal (MA 6148, gilt copper Lakshmi-Narayana, dation 1994, ex-Krishna Riboud collection), and the three Nepalese highlights on the museum's website are not in Joconde. Those three are entered by hand: priest crown dated 1145 (MA 4929), Birth of the Buddha (MA 1779), Bhairava mask (MA 5941). Holds the Hodgson fonds (deposited 1955) and two stone stelae documented as stolen (see Repatriation)."
@@ -295,22 +307,22 @@
   {
    "name": "Asian Art Museum, San Francisco",
    "country": "USA",
-   "harvested": false,
-   "access": "Collection site did not respond to scripted queries",
-   "licence": "Unknown for bulk reuse",
-   "web": "https://www.asianart.org",
+   "harvested": true,
+   "access": "eMuseum search saved from a browser (the site uses an AWS bot challenge; robots.txt asks for a 30-second crawl delay)",
+   "licence": "Collection website; image rights not established, so images are not reproduced",
+   "web": "https://searchcollection.asianart.org/advancedsearch/Objects/geographyCountry%3ANepal%3Bdepartment%3AHimalayan%20Art/list",
    "har": "https://www.himalayanart.org/search/set.cfm?setID=862",
-   "notes": "Repatriation news concerns Thailand; no Nepal-specific claim found."
+   "notes": "92 objects with Place of Origin = Nepal in the Himalayan Art department (21 Sep 2026): mainly sculpture in gilded bronze and copper repoussé, paintings on cotton, Newari sketchbook pages and a 1911 photograph album of a royal hunt in the Terai. One is catalogued by the museum as a presumed modern forgery. Objects outside the Himalayan Art department would need a separate search."
   },
   {
    "name": "Rubin Museum of Himalayan Art",
    "country": "USA",
-   "harvested": false,
-   "access": "Galleries closed Oct 2024; now a 'museum without walls'",
-   "licence": "Unknown",
-   "web": "https://rubinmuseum.org/wp-content/uploads/Rubin-Deaccessioned-Objects_100124.pdf",
+   "harvested": true,
+   "access": "rubinmuseum.org WordPress REST API (collection objects by region) plus object pages; robots.txt allows general crawlers",
+   "licence": "Images shown from the Rubin's server (350 px) under its terms for non-commercial educational use, credited with www.rubinmuseum.org; not copied",
+   "web": "https://rubinmuseum.org/region/nepalese-regions/",
    "har": "https://www.himalayanart.org/search/set.cfm?setID=179",
-   "notes": "Nearly 4,000 Himalayan objects. Publishes a deaccession list with HAR numbers."
+   "notes": "84 objects grouped under 'Nepalese Regions' (21 Sep 2026): 40 sculptures, 26 paintings, 8 manuscripts, ritual objects, prints and drawings; 70 link to Himalayan Art Resources. Galleries closed Oct 2024; now a 'museum without walls'. Its deaccession list records Nepalese objects returned to Nepal (see Repatriation); the returned torana is no longer listed."
   },
   {
    "name": "Himalayan Art Resources",
@@ -335,19 +347,19 @@
   {
    "name": "Ashmolean Museum, Oxford",
    "country": "UK",
-   "harvested": false,
-   "access": "Not yet checked",
-   "licence": "Unknown",
-   "web": "https://www.ashmolean.org",
+   "harvested": true,
+   "access": "Collections Online CSV export, enriched from the collection site's item records (credit line, acquisition, image id)",
+   "licence": "Images shown from the Ashmolean's IIIF server at 400 px with permission (confirmed 21 Sep 2026), credited '© Ashmolean Museum, University of Oxford'; not copied",
+   "web": "https://www.ashmolean.org/collections-online",
    "har": "https://www.himalayanart.org/collections/museums",
-   "notes": "Holds a 7th–8th-c. Avalokiteshvara that NHRC identifies as stolen from Ta Baha, Kathmandu."
+   "notes": "81 Eastern Art records (51 presented, 21 purchased, 6 bequeathed, 2 transferred from the Indian Institute; 43 with images); 75 name Nepal as place of creation (the rest say only 'Himalayas' or Tibet). 41 figurines and 16 paintings, from a 7th–8th-c. Licchavi stone stele to 20th-c. objects. Holds the Avalokiteshvara stele that matches NHRC's listing of an object stolen from Ta Baha (see Repatriation)."
   },
   {
    "name": "French museums (Joconde)",
    "country": "France",
    "harvested": true,
    "access": "Joconde, the national catalogue of the Musées de France, via exports from pop.culture.gouv.fr (21 Sep 2026)",
-   "licence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
+   "licence": "Data: Licence Ouverte 2.0 (Ministère de la Culture). Photographs shown live from POP's image store with the rights holders' permission (21 Sep 2026); 2 records marked not for distribution are excluded",
    "web": "https://pop.culture.gouv.fr/notice/joconde/50050016608",
    "har": "https://www.himalayanart.org/collections/museums",
    "notes": "47 records from 8 museums: Musée de la musique, Paris (24, mainly singing bowls); Musée des explorations du monde, Cannes (15); Musée Antoine Vivenel, Compiègne (3); Guimet (1); and one each in Toulouse, La Roche-sur-Yon, Nuits-Saint-Georges and Besançon. Found by searching Nepal in the place fields and by scanning all 3,277 Guimet records in Joconde."
@@ -726,11 +738,12 @@
    "status": "Claimed",
    "year": "NHRC listing",
    "holder": "Ashmolean Museum, Oxford",
-   "object": "Avalokiteshvara, 7th–8th c., stone",
+   "object": "Stele with Avalokiteshvara holding a lotus, 7th–8th c., grey chlorite stone (EA1997.185)",
    "origin": "Ta Baha monastery, Lagan Tole, Kathmandu (per NHRC)",
-   "detail": "NHRC Found Heritage. No accession number given; not yet checked against the Ashmolean's catalogue.",
+   "detail": "NHRC Found Heritage. NHRC gives no accession number; EA1997.185 in the Ashmolean's collection data matches its description (holder, subject, 7th–8th-c. Licchavi date, stone). Confirm with NHRC or the museum before citing the match. The Ashmolean's record gives the credit line 'Purchased, 1997.'",
    "sources": [
-    "https://nepalheritagerecoverycampaign.org/object/avalokiteshvara-bodhisattva-buddhist-deity/"
+    "https://nepalheritagerecoverycampaign.org/object/avalokiteshvara-bodhisattva-buddhist-deity/",
+    "https://www.ashmolean.org/collections-online#/item/ash-object-358255"
    ]
   },
   {

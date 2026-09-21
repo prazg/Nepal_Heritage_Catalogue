@@ -40,6 +40,7 @@ CLAIM_LINKS = {
     "aic-151120": "NHRC identifies this as stolen from Khapinchhen Tole, Patan (see Repatriation).",
     "aic-148361": "NHRC identifies this as stolen, from Lalitpur (see Repatriation).",
     "aic-148371": "NHRC lists this accession as stolen under the title Dancing Bhairav (see Repatriation).",
+    "ash-358255": "Matches NHRC's description of a 7th–8th-c. stone Avalokiteshvara stolen from Ta Baha, Lagan Tole, Kathmandu (see Repatriation).",
     "lacma-40129": "Matches the 12th-c. copper Buddha with life scenes that activists have asked LACMA to return (see Repatriation).",
 }
 
@@ -49,6 +50,27 @@ if bm_path.exists():  # produced by scripts/import_bm.py (British Museum, CC BY-
     for o in bm:
         o["century"] = _bucket(o["date"])
     objects += bm
+
+ash_path = ROOT / "data" / "ashmolean_objects.json"
+if ash_path.exists():  # produced by scripts/import_ashmolean.py
+    ash = json.load(open(ash_path))
+    for o in ash:
+        o["century"] = _bucket(o["date"])
+    objects += ash
+
+rubin_path = ROOT / "data" / "rubin_objects.json"
+if rubin_path.exists():  # produced by scripts/harvest_rubin.py
+    rub = json.load(open(rubin_path))
+    for o in rub:
+        o["century"] = _bucket(o["date"])
+    objects += rub
+
+aam_path = ROOT / "data" / "aam_objects.json"
+if aam_path.exists():  # produced by scripts/import_aam.py from a saved eMuseum results page
+    aam = json.load(open(aam_path))
+    for o in aam:
+        o["century"] = _bucket(o["date"])
+    objects += aam
 
 lacma_path = ROOT / "data" / "lacma_objects.json"
 if lacma_path.exists():  # produced by scripts/harvest_lacma.py
@@ -70,6 +92,17 @@ if man_path.exists():  # hand-entered records from institutions without open dat
     for o in man:
         o["century"] = _bucket(o["date"])
     objects += man
+
+# Live images from institutions' own servers, one switch per source in data/settings.json
+settings_path = ROOT / "data" / "settings.json"
+live = (json.load(open(settings_path)).get("live_images", {}) if settings_path.exists() else {})
+for o in objects:
+    key = o.pop("imageKey", None)
+    cand = o.pop("imageCandidate", "")
+    credit = o.pop("imageCreditText", "")
+    if key and cand and (live.get(key) or {}).get("on"):
+        o["image"] = cand
+        o["imageCredit"] = credit
 
 thumbs_path = ROOT / "data" / "thumbs.json"
 thumbs = json.load(open(thumbs_path)) if thumbs_path.exists() else {}

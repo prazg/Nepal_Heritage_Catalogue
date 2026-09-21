@@ -18,7 +18,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée Antoine Vivenel"
+  "joconde_museum": "Musée Antoine Vivenel",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée Antoine Vivenel, Compiègne",
@@ -39,7 +42,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée Antoine Vivenel"
+  "joconde_museum": "Musée Antoine Vivenel",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée Antoine Vivenel, Compiègne",
@@ -60,7 +66,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée Antoine Vivenel"
+  "joconde_museum": "Musée Antoine Vivenel",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Les Abattoirs, musée d'art moderne et contemporain, Toulouse",
@@ -81,7 +90,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Made in Nepal, but the school/artist is recorded as Etats-Unis — check",
   "strength": "weak",
-  "joconde_museum": "Les Abattoirs, musée d'art moderne et contemporain"
+  "joconde_museum": "Les Abattoirs, musée d'art moderne et contemporain",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée municipal, La Roche-sur-Yon",
@@ -102,7 +114,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée municipal"
+  "joconde_museum": "Musée municipal",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée Guimet",
@@ -123,7 +138,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée Guimet"
+  "joconde_museum": "Musée Guimet",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée municipal, Nuits-Saint-Georges",
@@ -144,7 +162,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée municipal"
+  "joconde_museum": "Musée municipal",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0144000311/012427.jpg",
+  "imageCreditText": "© Musée municipal, Nuits-Saint-Georges — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des beaux-arts et d'archéologie, Besançon",
@@ -165,7 +186,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des beaux-arts et d'archéologie"
+  "joconde_museum": "Musée des beaux-arts et d'archéologie",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -186,7 +210,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872000176/019520.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -207,7 +234,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872000507/018217.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -228,7 +258,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872000514/018053.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -249,7 +282,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872000519/018046.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -270,7 +306,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872000532/018233.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -291,7 +330,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872003301/017874.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -312,7 +354,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872003302/017875.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -333,7 +378,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872003303/017876.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -354,7 +402,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872003304/017877.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -375,7 +426,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872008843/024852.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -396,7 +450,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872008844/024860.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -417,7 +474,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872008868/025030.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -438,7 +498,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872008870/025043.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -459,7 +522,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872008878/026072.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée des explorations du monde (MEM), Cannes",
@@ -480,7 +546,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée des explorations du monde (MEM)"
+  "joconde_museum": "Musée des explorations du monde (MEM)",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M0872009164/026167.jpg",
+  "imageCreditText": "© Musée des explorations du monde (MEM), Cannes — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -501,7 +570,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157321/CMIM000025061.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -522,7 +594,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157322/CMIM000025063.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -543,7 +618,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157326/CMIM000025065.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -564,7 +642,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157328/CMIM000025067.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -585,7 +666,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157331/CMIM000025071.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -606,7 +690,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157334/CMIM000025073.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -627,7 +714,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157336/CMIM000025075.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -648,7 +738,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157339/CMIM000025077.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -669,7 +762,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157341/CMIM000025079.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -690,7 +786,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157345/CMIM000025081.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -711,7 +810,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157346/CMIM000025083.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -732,7 +834,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157348/CMIM000025085.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -753,7 +858,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157352/CMIM000025087.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -774,7 +882,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157353/CMIM000025089.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -795,7 +906,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157355/CMIM000025091.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -816,7 +930,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157360/CMIM000025093.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -837,7 +954,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157363/CMIM000025095.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -858,7 +978,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157366/CMIM000025097.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -879,7 +1002,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157367/CMIM000025099.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -900,7 +1026,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "",
+  "imageCreditText": ""
  },
  {
   "source": "Musée de la musique, Paris",
@@ -921,7 +1050,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157372/CMIM000025069.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -942,7 +1074,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157409/CMIM000034629.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -963,7 +1098,10 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50570157410/CMIM000034635.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  },
  {
   "source": "Musée de la musique, Paris",
@@ -984,6 +1122,9 @@
   "dataLicence": "Licence Ouverte 2.0 — Ministère de la Culture, base Joconde",
   "matchBasis": "Nepal in school, place of creation/use or collection fields",
   "strength": "strong",
-  "joconde_museum": "Musée de la musique"
+  "joconde_museum": "Musée de la musique",
+  "imageKey": "joconde",
+  "imageCandidate": "https://popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/M50571034363/CMIM000032601.jpg",
+  "imageCreditText": "© musée de la musique (Paris), 2021 — via POP, Ministère de la Culture; shown with permission."
  }
 ]

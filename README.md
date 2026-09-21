@@ -1,6 +1,14 @@
-# Nepalese heritage in collections abroad | Nepalese Heritage Catalogue
+# Nepalese heritage in collections abroad
 
 A static, searchable catalogue of Nepalese objects, manuscripts and archives held outside Nepal, built from institutions' open data, with hand-curated archival collections and a repatriation tracker.
+
+## Publish on GitHub Pages
+
+1. Create a new repository and upload everything in this folder, keeping the structure (`index.html`, `assets/`, `data/`, `scripts/`).
+2. In the repository go to **Settings → Pages**, set the source to **Deploy from a branch**, choose `main` and `/ (root)`, and save.
+3. The site appears at `https://<your-username>.github.io/<repository-name>/` after a minute or two.
+
+The page also works when opened directly from disk, because the data is loaded as `data/data.js` rather than fetched.
 
 ## Refresh the data
 
@@ -9,6 +17,7 @@ Requires Python 3.9+ and no third-party packages. Harvard records need a free AP
 ```bash
 export HARVARD_API_KEY=your-key   # optional; Harvard is skipped without it
 python3 scripts/harvest.py      # re-queries the open APIs
+python3 scripts/harvest_rubin.py         # Rubin Museum via its WordPress API and object pages (about 3 min)
 python3 scripts/harvest_lacma.py         # LACMA via collections.lacma.org (about 1 min)
 python3 scripts/harvest_smithsonian.py   # streams ~2.8 GB from the Smithsonian AWS bucket, keeps Nepal matches (roughly 10–15 min)
 # python3 scripts/harvest.py      # re-queries the open APIs (takes a few minutes)
@@ -39,12 +48,57 @@ APIs change without notice. If a harvester fails, check that institution's curre
 | Victoria and Albert Museum | `api.vam.ac.uk/v2` | `q_place_name=Nepal` |
 | Wellcome Collection | `api.wellcomecollection.org/catalogue/v2/works` | keyword `Nepal`; weak matches flagged |
 | Smithsonian Institution | public S3 bucket `smithsonian-open-access` (metadata/edan/<unit>/) | Nepal term in place, culture, geoLocation or title (strong); elsewhere in record (weak) |
+| Rubin Museum | `rubinmuseum.org/wp-json/wp/v2/collection?region=49` then each object page | objects in the Rubin's 'Nepalese Regions' group; strong if origin names Nepal |
 | LACMA | `collections.lacma.org/api/search` (the site's own search endpoint; robots.txt allows all; undocumented, may change) | keyword searches for Nepal and Nepalese places; strong if place made is Nepal or a Newar artist |
 | Harvard Art Museums | `api.harvardartmuseums.org/object` | `place=2035424` (Nepal) or `culture=37528164` (Nepalese), merged |
 
 ## British Museum records
 
+The British Museum asks for permission before text and data mining; this project has that permission (keep the correspondence on file). Its site is protected by Cloudflare, so the export runs in your own browser rather than as a scraper:
+
+Preferred: use Collection online's own download of search results (the 21 Sep 2026 export is in `data/raw/`). Import with `python3 scripts/import_bm.py data/raw/<file>.csv`.
+
+Fallback if the download option is unavailable:
+
+1. Open `https://www.britishmuseum.org/collection/search?keyword=nepal` (or a narrower filtered search).
+2. Open the browser console (F12 → Console), paste `scripts/bm_export_console.js`, press Enter. It reads one page every 3 seconds and downloads `bm_nepal.csv`.
+3. `python3 scripts/import_bm.py path/to/bm_nepal.csv` then `python3 scripts/build_data.py`.
+
+These records are CC BY-NC-SA 4.0, credit "© The Trustees of the British Museum", and are stored separately in `data/bm_objects.json`. Keep the site non-commercial. Images are displayed from the Museum's server with credit and are not copied into this repository. Object links are built from museum numbers for the Asia and Money and Medals departments (pattern verified); other departments link to a search for the museum number.
+
+## Ashmolean Museum, Oxford
+
+Export search results from Collections Online as CSV and run `python3 scripts/import_ashmolean.py data/raw/<export>.csv`. The museum's export separates records with the literal text `undefined`; the importer repairs this.
+
+Then `python3 scripts/enrich_ashmolean.py` adds credit lines, acquisition dates and image ids from the item endpoint the collection site uses. Images are shown live from the Ashmolean's IIIF server (see Live images); permission was confirmed on 21 Sep 2026 — keep the written confirmation on file.
+
+## Asian Art Museum, San Francisco
+
+`searchcollection.asianart.org` is behind an AWS bot challenge (and asks for a 30-second crawl delay), so searches are run in a browser and saved as "Webpage, HTML only". Import with `python3 scripts/import_aam.py data/raw/<saved page>.html`. The 21 Sep 2026 search (Place of Origin: Nepal; Department: Himalayan Art; 92 objects) is in `data/raw/`.
+
 ## French museums (Joconde)
+
+Joconde is the national catalogue of the Musées de France (Ministère de la Culture, Licence Ouverte / Open Licence 2.0, CSV about 1.1 GB, updated weekly on data.gouv.fr). It includes the Musée Guimet (about 3,203 records) and other French museums.
+
+1. On your own computer: `python3 scripts/filter_joconde.py` — streams the file from data.gouv.fr and writes only Nepal-related rows to `joconde_nepal.csv` (the 1.1 GB file is not saved).
+2. `python3 scripts/import_joconde.py data/raw/<pop export>.xlsx joconde_nepal.csv` — accepts POP exports and the filtered CSV together, de-duplicating by Joconde reference.
+
+POP exports only contain the fields searched: a search on author/school (AUTR, PAUT, ATTR, ECOL) misses most objects. Search "Lieu de création / utilisation" (LIEUX) for Népal, or use `filter_joconde.py`, which checks every field.
+
+## Live images (one switch per institution)
+
+Some images are shown directly from the institution's own server, never copied into this repository. Each source has a switch in `data/settings.json` under `live_images`, with the basis for the decision recorded next to it:
+
+| Key | Status | Basis |
+|---|---|---|
+| `ashmolean` | on | Permission from the Ashmolean Picture Library (21 Sep 2026) |
+| `rubin` | on | Rubin terms allow limited non-commercial, educational use with citation |
+| `joconde` | on | Rights holders' permission confirmed (21 Sep 2026); records marked `DIFFU = non` are never shown |
+| `guimet` | on | Permission from Guimet / RMN-Grand Palais confirmed (21 Sep 2026) |
+
+To change one, edit `on` in `data/settings.json` and run `python3 scripts/build_data.py`. Not possible: the Art Institute of Chicago (server blocks display on other sites) and the Asian Art Museum, San Francisco (bot challenge).
+
+Image references come from: `enrich_ashmolean.py` (IIIF, with a size fallback for very wide images), `harvest_rubin.py` (WordPress media endpoint, 350 px), `fetch_joconde_images.py` then `import_joconde.py`, and `data/manual_objects.json` (Guimet).
 
 ## Images
 

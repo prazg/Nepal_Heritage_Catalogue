@@ -17,7 +17,10 @@
   "openImage": false,
   "dataLicence": "Facts from the museum's website; image © RMN-Grand Palais (MNAAG, Paris), not reproduced",
   "matchBasis": "Described as Nepalese on the museum's own object page (entered by hand)",
-  "strength": "strong"
+  "strength": "strong",
+  "imageCandidate": "https://www.guimet.fr/sites/default/files/styles/social/public/2023-11/04-006310-photo-c-rmn-grand-palais-mnaag-paris-c-thierry-ollivier.jpg?itok=gt83oJrf",
+  "imageKey": "guimet",
+  "imageCreditText": "Photo © RMN-Grand Palais (MNAAG, Paris), shown with permission."
  },
  {
   "id": "guimet-MA1779",
@@ -37,7 +40,10 @@
   "openImage": false,
   "dataLicence": "Facts from the museum's website; image © RMN-Grand Palais (MNAAG, Paris), not reproduced",
   "matchBasis": "Described as Nepalese on the museum's own object page (entered by hand)",
-  "strength": "strong"
+  "strength": "strong",
+  "imageCandidate": "https://www.guimet.fr/sites/default/files/styles/social/public/2023-10/23-reine-maya.jpg?itok=cAw8_6N-",
+  "imageKey": "guimet",
+  "imageCreditText": "Photo © RMN-Grand Palais (MNAAG, Paris), shown with permission."
  },
  {
   "id": "guimet-MA5941",
@@ -57,6 +63,9 @@
   "openImage": false,
   "dataLicence": "Facts from the museum's website; image © RMN-Grand Palais (MNAAG, Paris), not reproduced",
   "matchBasis": "Described as Nepalese on the museum's own object page (entered by hand)",
-  "strength": "strong"
+  "strength": "strong",
+  "imageCandidate": "https://www.guimet.fr/sites/default/files/styles/social/public/2023-11/06-506706-photo-c-rmn-grand-palais-mnaag-paris-c-thierry-ollivier_0.jpg?itok=2SLdb_n4",
+  "imageKey": "guimet",
+  "imageCreditText": "Photo © RMN-Grand Palais (MNAAG, Paris), shown with permission."
  }
 ]
